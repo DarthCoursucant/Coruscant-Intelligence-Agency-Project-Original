@@ -8,6 +8,8 @@ html, body, main.page-body {
     display: flex;
 }
 
+/* CATEGORY BUTTONS */
+
 #category-boz-big {
     background-color: #ffffff;
     border: 2px solid #a32a41;
@@ -27,6 +29,7 @@ html, body, main.page-body {
     font-size: 50px;
 }
 
+
 #cateogory-normal-box {
     background-color: #ffffff;
     border: 2px solid #a32a41;
@@ -34,7 +37,7 @@ html, body, main.page-body {
     padding-top: 50px;
     width: 300px;
     height: 90px;
-    margin-left: 150px;
+    margin-left: 130px;
     margin-top: 30px;
 }
 
@@ -49,7 +52,7 @@ html, body, main.page-body {
     border: 2px solid #a32a41;
     border-radius: 15px;
     padding-top: 55px;
-    width: 300px;
+    width: 450px;
     height: 100px;
 }
 
@@ -67,6 +70,11 @@ html, body, main.page-body {
 .people-market-box-home {
     margin-left: 150px;
     margin-top: 30px;
+}
+
+.all-posts-box-market {
+    margin-top: 30px;
+    margin-left: 120px;
 }
 
 .rebel-box-home a {
@@ -94,8 +102,14 @@ html, body, main.page-body {
 }
 
 .people-market-box-home a {
-    padding-left: 75px;
+    padding-left: 140px;
 }
+
+.all-posts-box-market a {
+    padding-left: 85px;
+}
+
+/* END CATEGORY BUTTONS */
 
 .hero-image-index-one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/65535/49818284777_bd80680b7d_b.jpg')
