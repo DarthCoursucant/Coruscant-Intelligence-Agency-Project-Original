@@ -146,10 +146,14 @@ html, body, main.page-body {
     margin-bottom: 80px;
 }
 
-.specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four {
+.specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four, .specifc-file-option-five, .specifc-file-option-six {
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 250px;
+}
+
+.specifc-file-option-six {
+    margin-bottom: 250px;
 }
 
 #specifc-file-image img {
@@ -175,4 +179,14 @@ html, body, main.page-body {
     text-align: center;
     font-size: 17px;
     color: #ffffff;
+}
+
+.header-of-specific-page h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-left: 280px;
+}
+
+.header-of-specific-page {
+    margin-bottom: 100px;
 }
