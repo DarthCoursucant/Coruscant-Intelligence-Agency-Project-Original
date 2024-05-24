@@ -195,17 +195,26 @@ html, body, main.page-body {
 
 .post-button-index-page {
     background-color: #000000;
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 180px;
     margin-top: 30px;
     margin-left: 50px;
     border: 2px solid #d30101;
     border-radius: 20px;
     margin-inline: auto;
+    padding-top: 70px;
+}
+
+.post-button-index-page h1 {
+    font-size: 30px;
+}
+
+.post-button-index-page p {
+    font-size: 17px;
 }
 
 .post-button-index-page a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 25px;
+    text-align: center;
 }
