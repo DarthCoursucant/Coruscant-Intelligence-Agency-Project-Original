@@ -43,9 +43,15 @@ html, body, main.page-body {
 
 /* END POP UP ADD*/
 
+/*Flex Property*/
+
 .sith-files-category {
     display: flex;
 }
+
+/*END Flex Property*/
+
+/*CATEGORIES CARDS*/
 
 #files-photo-category {
     background-position: center;
@@ -96,3 +102,11 @@ html, body, main.page-body {
     margin-top: -40px;
     margin-left: -0px;
 }
+
+.header-files-category h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-left: 350px;
+}
+
+/*END CATEGORIES CARDS*/
