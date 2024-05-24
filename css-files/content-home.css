@@ -62,10 +62,6 @@ html, body, main.page-body {
     text-align: center;
 }
 
-.organizations-box-home {
-    margin-left: 350px;
-    margin-top: 30px;
-}
 
 .people-market-box-home {
     margin-left: 150px;
@@ -81,7 +77,7 @@ html, body, main.page-body {
     padding-left: 70px;
 }
 
-.imperial-box-home a, .smuggler-box-home a {
+.imperial-box-home a, .smuggler-box-home a, .starships-files-box-home a {
     padding-left: 60px;
 }
 
@@ -97,7 +93,7 @@ html, body, main.page-body {
     padding-left: 65px;
 }
 
-.organizations-box-home a {
+.organizations-box-home a, .black-market-box-home a {
     padding-left: 25px;
 }
 
@@ -107,6 +103,18 @@ html, body, main.page-body {
 
 .all-posts-box-market a {
     padding-left: 85px;
+}
+
+.gangs-sybdicates-box-home a {
+    padding-left: 5px;
+}
+
+.events-timeline-box-home a {
+    padding-left: 45px;
+}
+
+.planets-files-box-home a {
+    padding-left: 80px;
 }
 
 /* END CATEGORY BUTTONS */
