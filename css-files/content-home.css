@@ -184,6 +184,7 @@ html, body, main.page-body {
     border: 2px solid #ffffff;
     width: 1300px;
     margin-left: 45px;
+    margin-bottom: 100px;
 }
 
 #header-for-the-post-container-index-page h1 {
@@ -193,35 +194,47 @@ html, body, main.page-body {
     color: #000000;
 }
 
-.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-three, .post-button-index-page-four {
+.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-three, .post-button-index-page-four, .post-button-index-page-five, .post-button-index-page-six, .post-button-index-page-seven {
     background-color: #000000;
-    width: 300px;
     margin-top: 30px;
     margin-left: 50px;
     border: 2px solid #d30101;
     border-radius: 20px;
     margin-inline: auto;
+    margin-bottom: 50px;
 }
 
-.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-four {
+.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-three, .post-button-index-page-four {
+    width: 300px;
+}
+
+.post-button-index-page-five, .post-button-index-page-six, .post-button-index-page-seven {
+    width: 350px;
+}
+
+.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-four, .post-button-index-page-six {
     padding-top: 70px;
     height: 180px;
 }
 
-.post-button-index-page-three {
+.post-button-index-page-three, .post-button-index-page-five {
     padding-top: 50px;
     height: 200px;
 }
 
-.post-button-index-page-one h1, .post-button-index-page-two h1, .post-button-index-page-three h1, .post-button-index-page-four h1 {
+.post-button-index-page-seven {
+    padding-top: 60px;
+}
+
+.post-button-index-page-one h1, .post-button-index-page-two h1, .post-button-index-page-three h1, .post-button-index-page-four h1, .post-button-index-page-five h1, .post-button-index-page-six h1, .post-button-index-page-seven h1 {
     font-size: 30px;
 }
 
-.post-button-index-page-one p, .post-button-index-page-two p, .post-button-index-page-three p, .post-button-index-page-four p {
+.post-button-index-page-one p, .post-button-index-page-two p, .post-button-index-page-three p, .post-button-index-page-four p, .post-button-index-page-five p, .post-button-index-page-six p, .post-button-index-page-seven p {
     font-size: 17px;
 }
 
-.post-button-index-page-one a, .post-button-index-page-two a, .post-button-index-page-three a, .post-button-index-page-four a {
+.post-button-index-page-one a, .post-button-index-page-two a, .post-button-index-page-three a, .post-button-index-page-four a, .post-button-index-page-five a, .post-button-index-page-six a, .post-button-index-page-seven a {
     color: #ffffff;
     text-decoration: none;
     text-align: center;
