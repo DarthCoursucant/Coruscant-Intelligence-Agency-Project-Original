@@ -1,0 +1,199 @@
+html, body, main.page-body {
+    background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.wrap { flex-wrap: wrap; }
+
+.flex-boxes-home, .rest-of-the-post-index-page {
+    display: flex;
+}
+
+#category-boz-big {
+    background-color: #ffffff;
+    border: 2px solid #a32a41;
+    border-radius: 15px;
+    width: 600px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+#category-boz-big a {
+    text-decoration: none;
+    color: #a32a41;
+    text-align: center;
+    padding-left: 210px;
+    font-size: 50px;
+}
+
+#cateogory-normal-box {
+    background-color: #ffffff;
+    border: 2px solid #a32a41;
+    border-radius: 15px;
+    padding-top: 50px;
+    width: 300px;
+    height: 90px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+#cateogory-normal-box a {
+    text-decoration: none;
+    color: #a32a41;
+    text-align: center;
+}
+
+#category-lower-box {
+    background-color: #ffffff;
+    border: 2px solid #a32a41;
+    border-radius: 15px;
+    padding-top: 55px;
+    width: 300px;
+    height: 100px;
+}
+
+#category-lower-box a {
+    text-decoration: none;
+    color: #a32a41;
+    text-align: center;
+}
+
+.organizations-box-home {
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.people-market-box-home {
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.rebel-box-home a {
+    padding-left: 70px;
+}
+
+.imperial-box-home a, .smuggler-box-home a {
+    padding-left: 60px;
+}
+
+.bounty-hunter-box-home a {
+    padding-left: 20px;
+}
+
+.mandolorian-box-home a {
+    padding-left: 30px;
+}
+
+.species-box-home a {
+    padding-left: 65px;
+}
+
+.organizations-box-home a {
+    padding-left: 25px;
+}
+
+.people-market-box-home a {
+    padding-left: 75px;
+}
+
+.hero-image-index-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/65535/49818284777_bd80680b7d_b.jpg')
+}
+
+.hero-image-index-two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers-clan.com/wp-content/uploads/2023/10/star-wars-sad-baby-yoda-desktop-wallpaper-preview.jpg')
+}
+
+.hero-image-index-three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Star_wars._Desfile_en_Santiago_de_Compostela.jpg')
+}
+
+.hero-image-index-four {
+    background-image: linear-gradient(rgba(33, 4, 4, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0YXIlMjB3YXJzfGVufDB8fDB8fHww')
+}
+
+.hero-image-index-five {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn12.picryl.com/photo/2016/12/31/star-wars-sturmtruppler-wallpaper-backgrounds-textures-b30d9b-1024.jpg')
+}
+
+.hero-image-index-one, .hero-image-index-two, .hero-image-index-three, .hero-image-index-four, .hero-image-index-five {
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text-index-one {
+    color: #ffffff;
+}
+
+.hero-text-index-one h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero-text-index-one p {
+    font-size: 20px;
+    text-align: center;
+    width: 550px;
+    margin-left: 150px;
+}
+
+#hero-home-button {
+    background-color: #a32a41;
+    width: 200px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-left: 300px;
+}
+
+#hero-home-button a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 30px;
+}
+
+/*POST CONTAINER*/
+.rest-of-the-post-index-page {
+    background-color: #a32a41;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    margin-bottom: 50px;
+}
+
+#header-for-the-post-container-index-page h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.post-button-index-page {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.post-button-index-page a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+#post-six {
+    margin-left: 110px;
+}
+
+#post-five {
+    margin-left: 40px;
+}
+
+#post-seven {
+    margin-left: 300px;
+    margin-bottom: 40px;
+}
