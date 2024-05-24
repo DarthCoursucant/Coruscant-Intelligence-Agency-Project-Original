@@ -132,7 +132,7 @@ html, body, main.page-body {
     font-size: 17px;
 }
 
-.post-container-text, .post-container-text-one, .post-container-text-two {
+.post-container-text, .post-container-text-one, .post-container-text-two, .post-container-text-three {
     margin-left: 330px;
     width: 1000px;
 }
@@ -147,6 +147,10 @@ html, body, main.page-body {
 
 .post-container-text-two {
     margin-top: -1040px;
+}
+
+.post-container-text-three {
+    margin-top: -970px;
 }
 
 /* END MAIN CONTENT*/
