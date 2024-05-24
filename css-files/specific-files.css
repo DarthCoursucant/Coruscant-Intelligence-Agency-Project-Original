@@ -2,95 +2,41 @@ html, body, main.page-body {
     background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
-.wrap { flex-wrap: wrap; }
-
-/* NOTES CARD */
-
-.notes-from-every-sith {
-    display: flex;
-}
-
-.notes-from-every-sith, .exile-and-arival-note-post, .the-first-great-schism-note-post, .the-hundred-year-darkness-note-post, .the-new-truth-note-post, .proud-people-of-sith-note-post, .the-weakness-of-inferiors, .the-false-war, .the-useful-bureaucrats, .hiding-in-plain-sight {
-    margin-left: 60px;
-    margin-top: 40px;
-}
-
-.the-book-of-anger, .the-manipulation-of-life {
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.the-new-truth-note-post img {
+html, body, header.page-header, footer.page-footer, main.page-body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+  }
 
-#box-image img {
-    width: 350px;
-    height: 250px;
-    border-radius: 15px;
-}
-
-.box-text-box {
-    background-color: #ffffff;
-    width: 350px;
-    border-radius: 15px;
-    height: 100px;
-    /*
-    margin-top: -260px;
-    If the text box should be placed at the top of the image
-    */
-    margin-top: -108px;
-    position: absolute;
-}
-
-.box-text-box h1 {
-    font-size: 30px;
-    line-height: 20px;
-    text-align: center;
-}
-
-#box-button {
-    font-size: 20px;
-    margin-left: 90px;
-    text-align: center;
-    margin-top: 20px;
-    width: 180px;
-    border-radius: 15px;
-    border: 2px solid #000000;
-    background-color: #a32a41;
-}
-
-#box-button a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* END NOTES CARD */
+.wrap { flex-wrap: wrap; }
 
 /* NOTES STYLING */
 
 .note-container {
-    background-color: #ffffff;
+    background-color: #a32a41;
     border-radius: 20px;
-    width: 1200px;
-    margin-left: 150px;
-    border: 2px solid #a32a41;
+    width: 1100px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 2px solid #ffffff;
+    padding: 30px 30px 30px 30px;
 }
 
 .note-container h1 {
     font-size: 50px;
+    color: #ffffff;
 }
 
 .note-container h2 {
     font-size: 35px;
+    color: #ffffff;
 }
 
 .note-container p {
     font-size: 20px;
-    color: #a32a41;
+    color: #ffffff;
 }
 
 .note-container h1, .note-container h2, .note-container p {
@@ -98,17 +44,19 @@ html, body, main.page-body {
 }
 
 #comment-from-cia-note-container, #longer-comment-from-cia-note-container {
-    background-color: #a32a41;
+    background-color: #000000;
     border-radius: 20px;
     line-height: 20px;
-    margin-left: 250px;
-    border: 2px solid #000000;
+    margin-top: 40px;
+    margin-left: 200px;
+    border: 2px solid #ffffff;
 }
 
 #comment-from-cia-note-container {
     width: 700px;
     height: 150px;
     margin-bottom: 20px;
+    padding: 30px 30px 30px 30px;
 }
 
 #longer-comment-from-cia-note-container {
@@ -189,4 +137,7 @@ html, body, main.page-body {
 
 .header-of-specific-page {
     margin-bottom: 100px;
+    margin-top: 50px;
 }
+
+/*END IMAGES PODITION*/
