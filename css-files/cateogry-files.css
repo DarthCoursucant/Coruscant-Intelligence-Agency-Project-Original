@@ -76,6 +76,7 @@ html, body, main.page-body {
     font-size: 25px;
     text-align: center;
     padding-top: 30px;
+    color: #a32a41;
 }
 
 .files-info-category p {
@@ -85,7 +86,8 @@ html, body, main.page-body {
 
 .files-button {
     width: 150px;
-    background-color: #D30101;
+    background-color: #528DB1;
+    border: 2px solid #d30101;
     font-size: 20px;
     text-align: center;
     margin-left: 80px;
@@ -110,3 +112,20 @@ html, body, main.page-body {
 }
 
 /*END CATEGORIES CARDS*/
+
+/*SPECIAL CARDS CODE*/
+.first-category-option {
+    border: 2px solid #d30101;
+}
+
+/*END SPECIAL CARDS CODE*/
+
+/*CARDS PLACEMENT*/
+
+.first-category-option {
+    margin-left: 40px;
+}
+
+.first-category-option {
+    margin-top: 15px;
+}
