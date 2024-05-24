@@ -114,7 +114,7 @@ html, body, main.page-body {
 /*END CATEGORIES CARDS*/
 
 /*SPECIAL CARDS CODE*/
-.first-category-option, .two-category-option, .three-category-option {
+.first-category-option, .two-category-option, .three-category-option, .four-category-option, .five-category-option, .six-category-option {
     border: 2px solid #d30101;
 }
 
@@ -122,10 +122,14 @@ html, body, main.page-body {
 
 /*CARDS PLACEMENT*/
 
-.first-category-option, .two-category-option, .three-category-option {
+.first-category-option, .two-category-option, .three-category-option, .four-category-option, .five-category-option, .six-category-option {
     margin-left: 40px;
 }
 
-.first-category-option, .two-category-option, .three-category-option {
+.first-category-option, .two-category-option, .three-category-option, .four-category-option {
     margin-top: 15px;
+}
+
+.five-category-option, .six-category-option {
+    margin-top: 40px;
 }
