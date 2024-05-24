@@ -76,11 +76,11 @@ html, body, main.page-body {
     height: 500px;
 }
 
-.hero-container-image-two, .hero-container-image-three, .hero-container-image-six, .hero-container-image-twelve  {
+.hero-container-image-two, .hero-container-image-three, .hero-container-image-six  {
     height: 400px;
 }
 
-.hero-container-image-four, .hero-container-image-five, .hero-container-image-seven, .hero-container-image-eight, .hero-container-image-nine, .hero-container-image-teen, .hero-container-image-eleven   {
+.hero-container-image-four, .hero-container-image-five, .hero-container-image-seven, .hero-container-image-eight, .hero-container-image-nine, .hero-container-image-teen, .hero-container-image-eleven, .hero-container-image-twelve {
     height: 450px;
 }
 
