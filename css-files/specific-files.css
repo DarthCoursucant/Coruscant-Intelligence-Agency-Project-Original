@@ -146,7 +146,7 @@ html, body, main.page-body {
     margin-bottom: 80px;
 }
 
-.specifc-file-option-one {
+.specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four {
     display: flex;
     margin-top: 30px;
     margin-left: 250px;
