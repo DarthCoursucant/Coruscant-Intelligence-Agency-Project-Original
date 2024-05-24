@@ -52,6 +52,7 @@ html, body, main.page-body {
     border: 2px solid #d30101;
     border-radius: 15px;
     padding-top: 55px;
+    margin-left: 175px;
     width: 450px;
     height: 100px;
 }
@@ -183,12 +184,12 @@ html, body, main.page-body {
     border-radius: 20px;
     border: 2px solid #ffffff;
     width: 1300px;
-    margin-left: 45px;
+    margin-left: 55px;
     margin-bottom: 100px;
 }
 
 #header-for-the-post-container-index-page h1 {
-    font-size: 40px;
+    font-size: 55px;
     text-align: center;
     width: 1300px;
     color: #000000;
