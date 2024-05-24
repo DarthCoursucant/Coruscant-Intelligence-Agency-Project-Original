@@ -193,27 +193,35 @@ html, body, main.page-body {
     color: #000000;
 }
 
-.post-button-index-page {
+.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-three, .post-button-index-page-four {
     background-color: #000000;
     width: 300px;
-    height: 180px;
     margin-top: 30px;
     margin-left: 50px;
     border: 2px solid #d30101;
     border-radius: 20px;
     margin-inline: auto;
-    padding-top: 70px;
 }
 
-.post-button-index-page h1 {
+.post-button-index-page-one, .post-button-index-page-two, .post-button-index-page-four {
+    padding-top: 70px;
+    height: 180px;
+}
+
+.post-button-index-page-three {
+    padding-top: 50px;
+    height: 200px;
+}
+
+.post-button-index-page-one h1, .post-button-index-page-two h1, .post-button-index-page-three h1, .post-button-index-page-four h1 {
     font-size: 30px;
 }
 
-.post-button-index-page p {
+.post-button-index-page-one p, .post-button-index-page-two p, .post-button-index-page-three p, .post-button-index-page-four p {
     font-size: 17px;
 }
 
-.post-button-index-page a {
+.post-button-index-page-one a, .post-button-index-page-two a, .post-button-index-page-three a, .post-button-index-page-four a {
     color: #ffffff;
     text-decoration: none;
     text-align: center;
