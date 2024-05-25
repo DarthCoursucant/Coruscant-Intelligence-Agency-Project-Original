@@ -99,10 +99,14 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     width: 800px;
     border-radius: 15px;
     border: 2px solid #a32a41;
-    text-align: center;
     margin-left: 320px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#specific-file-side-container-text {
+    text-align: center;
+    color: #d30101;
 }
 
 .specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four, .specifc-file-option-five, .specifc-file-option-six {
