@@ -115,6 +115,12 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     margin-left: 250px;
 }
 
+.specifc-file-option-seven {
+    display: flex;
+    margin-left: 250px;
+    margin-top: -200px;
+}
+
 .specifc-file-option-six {
     margin-bottom: 250px;
 }
