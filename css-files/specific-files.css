@@ -82,7 +82,7 @@ html, body, header.page-header, footer.page-footer, main.page-body {
 
 /*IMAGES PODITION*/
 
-.specifc-file-intro {
+.specifc-file-intro, .last-page-content-file {
     background-color: #ffffff;
     width: 1000px;
     margin-left: 220px;
