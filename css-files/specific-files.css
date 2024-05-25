@@ -94,6 +94,17 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     margin-bottom: 80px;
 }
 
+.specific-file-side-container {
+    background-color: #ffffff;
+    width: 800px;
+    border-radius: 15px;
+    border: 2px solid #a32a41;
+    text-align: center;
+    margin-left: 320px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four, .specifc-file-option-five, .specifc-file-option-six {
     display: flex;
     margin-top: 50px;
