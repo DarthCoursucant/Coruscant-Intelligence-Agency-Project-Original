@@ -150,6 +150,12 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     margin-left: 280px;
 }
 
+.header-of-specific-page h2 {
+    font-size: 70px;
+    color: #ffffff;
+    margin-left: 230px;
+}
+
 .header-of-specific-page {
     margin-bottom: 100px;
     margin-top: 50px;
