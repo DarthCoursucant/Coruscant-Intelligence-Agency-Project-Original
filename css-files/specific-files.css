@@ -126,7 +126,7 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     color: #d30101;
 }
 
-.specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four, .specifc-file-option-five, .specifc-file-option-six {
+.specifc-file-option-one, .specifc-file-option-two, .specifc-file-option-three, .specifc-file-option-four, .specifc-file-option-five, .specifc-file-option-six, .specifc-file-option-seven, .specifc-file-option-eight {
     display: flex;
     margin-top: 50px;
     margin-left: 250px;
