@@ -108,7 +108,12 @@ html, body, header.page-header, footer.page-footer, main.page-body {
 
 #power-of-sith-text {
     color: #ffffff;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
+}
+
+#power-of-sith-header {
+    font-size: 40px;
+    color: #ffffff;
 }
 
 .specific-file-side-container {
@@ -263,3 +268,66 @@ html, body, header.page-header, footer.page-footer, main.page-body {
 }
 
 /* END NOTES CARD */
+
+/*RIM CAMPAIGN */
+
+.sith-rim-campaign-container {
+    display: flex;
+}
+
+.sith-rim-capaign-zero, .sith-rim-capaign-one, .sith-rim-campaign-two, .sith-rim-campaign-three, .sith-rim-campaign-four, .sith-rim-campaign-five, .sith-rim-campaign-six, .sith-rim-campaign-seven, .sith-rim-campaign-eight, .sith-rim-campaign-nine, .sith-rim-capign-teen {
+    display: flex;
+    border: 2px solid #ffffff;
+    width: 600px;
+    height: 250px;
+}
+
+#rim-capaing-photo img {
+    width: 300px;
+    height: 250px;
+}
+
+.rim-capaing-text-box {
+    background-color: #a32a41;
+    width: 300px;
+    height: 250px;
+}
+
+#text-rim-campaign h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#text-rim-campaign h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#rim-campaign-button {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    width: 250px;
+    margin-left: 30px;
+}
+
+#rim-campaign-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sith-rim-capaign-zero, .sith-rim-capaign-one, .sith-rim-campaign-two, .sith-rim-campaign-two, .sith-rim-campaign-three, .sith-rim-campaign-four, .sith-rim-campaign-five, .sith-rim-campaign-six, .sith-rim-campaign-seven, .sith-rim-campaign-eight, .sith-rim-campaign-nine {
+    margin-left: 60px;
+}
+
+.sith-rim-campaign-two, .sith-rim-campaign-three, .sith-rim-campaign-four, .sith-rim-campaign-five, .sith-rim-campaign-six, .sith-rim-campaign-seven, .sith-rim-campaign-eight, .sith-rim-campaign-nine, .sith-rim-capign-teen {
+    margin-top: 30px;
+}
+
+.sith-rim-capign-teen {
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
