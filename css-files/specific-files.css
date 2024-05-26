@@ -203,10 +203,10 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     margin-left: 100px;
 }
 
-.header-of-specific-page h4 {
+.header-of-specific-page h5 {
     font-size: 50px;
     color: #ffffff;
-    margin-left: 240px;
+    margin-left: 220px;
 }
 
 .header-of-specific-page {
