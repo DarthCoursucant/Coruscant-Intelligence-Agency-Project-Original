@@ -94,16 +94,23 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     margin-bottom: 80px;
 }
 
-.specifc-whole-content-container {
+.specifc-whole-content-container, .specifc-whole-content-container-one {
     background-color: #a32a41;
     width: 1200px;
-    margin-left: 150px;
     border-radius: 15px;
     border: 2px solid #ffffff;
     text-align: center;
     font-size: 25px;
     margin-top: 50px;
     margin-bottom: 80px;
+}
+
+.specifc-whole-content-container {
+    margin-left: 150px;
+}
+
+.specifc-whole-content-container-one {
+    margin-left: 120px;
 }
 
 #power-of-sith-text {
