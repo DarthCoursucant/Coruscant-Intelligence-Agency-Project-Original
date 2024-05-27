@@ -209,6 +209,12 @@ html, body, header.page-header, footer.page-footer, main.page-body {
     margin-left: 220px;
 }
 
+.header-of-specific-page h6 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 50px;
+}
+
 .header-of-specific-page {
     margin-bottom: 100px;
     margin-top: 50px;
