@@ -111,6 +111,12 @@ html, body, main.page-body {
     margin-left: 350px;
 }
 
+.header-files-category h2 {
+    font-size: 70px;
+    color: #ffffff;
+    margin-left: 270px;
+}
+
 /*END CATEGORIES CARDS*/
 
 /*SPECIAL CARDS CODE*/
