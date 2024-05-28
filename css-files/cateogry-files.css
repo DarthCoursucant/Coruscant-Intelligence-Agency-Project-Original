@@ -45,7 +45,7 @@ html, body, main.page-body {
 
 /*Flex Property*/
 
-.sith-files-category, .jedi-files-category {
+.sith-files-category, .jedi-files-category, .form-one-combat-container {
     display: flex;
 }
 
@@ -139,11 +139,15 @@ html, body, main.page-body {
     border: 2px solid #d30101;
 }
 
+.first-category-option, .two-category-option {
+    width: 300px;
+}
+
 /*END SPECIAL CARDS CODE*/
 
 /*CARDS PLACEMENT*/
 
-.first-category-option, .two-category-option, .three-category-option, .four-category-option, .five-category-option, .six-category-option, .seven-category-option, .eight-category-option, .nine-category-option, .teen-category-option, .eleven-category-option, .twelve-category-option, .thirten-category-option, .fourteen-category-option, .fifteen-category-option, .sixteen-category-option, .seventeen-category-option, .eightteen-category-option, .ninteen-category-option, .twennty-category-option, .twenty-one-category-option {
+.first-category-option, .two-category-option, .three-category-option, .four-category-option, .five-category-option, .six-category-option, .seven-category-option, .eight-category-option, .nine-category-option, .teen-category-option, .eleven-category-option, .twelve-category-option, .thirten-category-option, .fourteen-category-option, .fifteen-category-option, .sixteen-category-option, .seventeen-category-option, .eightteen-category-option, .ninteen-category-option, .twennty-category-option, .twenty-one-category-optio {
     margin-left: 40px;
 }
 
