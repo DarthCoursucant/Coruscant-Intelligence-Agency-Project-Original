@@ -117,6 +117,21 @@ html, body, main.page-body {
     margin-left: 270px;
 }
 
+.category-file-intro {
+    background-color: #a32a41;
+    color: #ffffff;
+    text-align: center;
+    width: 1200px;
+    border-radius: 20px;
+    border: 2px solid #528DB1;
+    margin-left: 110px;
+}
+
+.category-file-intro p {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
 /*END CATEGORIES CARDS*/
 
 /*SPECIAL CARDS CODE*/
