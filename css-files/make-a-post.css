@@ -7,3 +7,57 @@
     width: 1000px;
     margin-left: 100px;
 }
+
+/*Forms*/
+.header-of-post-box, .author-of-the-post-box {
+    display: flex;
+    border: 2px solid #d30101;
+    height: 80px;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.header-of-post-box {
+    background-color: brown;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.author-of-the-post-box {
+    background-color: burlywood;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.text-of-the-post-box {
+    background-color: chocolate;
+    margin-left: 50px;
+    margin-top: -600px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    width: 800px;
+    height: 400px;
+}
+
+
+.name-of-post {
+    font-size: 30px;
+    margin-left: 70px;
+    color: #ffffff;
+}
+
+.author-of-post {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+#header-box, #author-box {
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
