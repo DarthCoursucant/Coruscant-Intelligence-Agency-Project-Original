@@ -1,0 +1,57 @@
+html, body, main.page-body {
+    background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#logo-header {
+    margin-left: 500px;
+}
+
+.login-container {
+    background-color: #a32a41;
+    width: 600px;
+    margin-left: 450px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    margin-top: 100px;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+  }
+
+/*Input Field After This Sign*/
+label::after {
+    content: ":";
+  }
+
+/*Input Area Code*/
+input,textarea {
+    font: 1em sans-serif;
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid #417D6C;
+    outline: none;
+    background-color: #ffffff;
+ }
+
+ #login-form-button {
+    background-color: #417D6C;
+    margin: 30px 30px 30px 30px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+ }
+
+ #login-form-button a {
+    text-decoration: none;
+    color: #000;
+ }
