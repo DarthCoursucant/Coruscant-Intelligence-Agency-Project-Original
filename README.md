@@ -8,4 +8,5 @@
  The Reconquest of Ord Radama
 
 
- AADDING GALAXY FILES?
+Username = Shmi Skywalker
+Password = Tatooine
