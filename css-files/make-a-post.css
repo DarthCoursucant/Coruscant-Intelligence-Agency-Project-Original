@@ -1,0 +1,9 @@
+.make-a-post-container {
+    display: flex;
+}
+
+.make-a-post-container {
+    background-color: blue;
+    width: 1000px;
+    margin-left: 100px;
+}
