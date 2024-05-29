@@ -32,12 +32,13 @@
 
 .text-of-the-post-box {
     background-color: chocolate;
-    margin-left: 50px;
+    margin-left: 90px;
     margin-top: -600px;
     padding: 20px 20px 20px 20px;
     border-radius: 20px;
     width: 800px;
     height: 400px;
+    border: 2px solid #d30101;
 }
 
 
