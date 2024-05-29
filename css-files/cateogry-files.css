@@ -45,7 +45,7 @@ html, body, main.page-body {
 
 /*Flex Property*/
 
-.sith-files-category, .jedi-files-category  {
+.sith-files-category, .jedi-files-category, .night-sisters-files-category  {
     display: flex;
 }
 
