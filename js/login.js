@@ -1,11 +1,15 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Trying to fuck with the website?...");
+    console.log("Hello There...");
 
     const loginForm = document.querySelector("form.login-form");
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
     const loginButton = document.querySelector("#login-form-button a");
+
+    // Setting default values for the username and password
+    usernameInput.value = "Shmi Skywalker";
+    passwordInput.value = "Tatooine";
 
     const checkFormValidity = () => {
         const username = usernameInput.value.trim();
@@ -18,29 +22,31 @@ document.addEventListener("DOMContentLoaded", () => {
         if (checkFormValidity()) {
             loginButton.style.opacity = 1; 
         } else {
-            loginButton.style.opacity = 1.5; 
+            loginButton.style.opacity = 0.5; 
         }
     };
 
-    loginButton.style.opacity = 1.5;
+    // Update button opacity based on default values
+    updateLoginButtonOpacity();
 
     usernameInput.addEventListener("input", updateLoginButtonOpacity);
     passwordInput.addEventListener("input", updateLoginButtonOpacity);
 
     loginButton.addEventListener("click", (event) => {
         event.preventDefault();
-        console.log("Roger, Roger");
+        console.log("General Grevious?");
 
-        const username = usernameInput.value.trim("Shmi-Skywalker");
-        const password = passwordInput.value.trim("May-the-force-be-with-you");
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
 
         console.log("username: ", username);
         console.log("password: ", password);
 
         if (checkFormValidity()) {
+            console.log("Roger, Roger, Please Wait");
             getToken(username, password);
         } else {
-            console.error("Enter Username And Password You Must.");
+            console.error("Enter Username And Password You Must, Young Padawan.");
         }
     });
 
