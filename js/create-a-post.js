@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             };
 
+            console.log("Post Data:", postData);
+
             const options = {
                 method: "POST",
                 headers: {
@@ -56,11 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.location.href = "admin-page.html";
             } else {
                 const errorData = await response.json();
-                throw new Error(errorData.errors[0].message);
+                console.log("Error Data:", errorData);
+                throw new Error(errorData.errors ? errorData.errors[0].message : "Unknown error");
             }
 
         } catch (error) {
-            console.error(error.message);
+            console.error("Error:", error.message);
             alert("Failed to Create Blog Post. Please try again.");
         }
 
