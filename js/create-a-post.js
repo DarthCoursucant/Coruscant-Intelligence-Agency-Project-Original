@@ -1,5 +1,42 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("JavaScript is running");
+
+    const submitButton = document.getElementById("submit-button");
+    console.log("Submit button:", submitButton);
+    
+    submitButton.addEventListener("click", async (event) => {
+        event.preventDefault();
+        console.log("Submit button clicked");
+
+        // Your existing code...
+    });
+
+    document.getElementById("message").addEventListener("input", function() {
+        const maxLength = 2000;
+        const currentLength = this.value.length;
+        const remaining = maxLength • currentLength;
+
+        let counter = document.getElementById("blogTextCounter");
+        if (!counter) {
+            counter = document.createElement("div");
+            counter.id = "blogTextCounter";
+            this.parentNode.appendChild(counter);
+        }
+        counter.textContent = remaining + " characters remaining...";
+
+        if (remaining < 0) {
+            counter.style.color = "red";
+        } else {
+            counter.style.color = "";
+        }
+
+    });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submit-button");
 
     submitButton.addEventListener("click", async (event) => {
