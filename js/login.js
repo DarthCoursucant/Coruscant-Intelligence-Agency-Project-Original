@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("form.login-form");
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
-    const loginButton = document.querySelector("#login-form-button a");
+    const loginButton = document.querySelector("#login-form-button");
 
     // Setting default values for the username and password
     usernameInput.value = "Shmi-Skywalker";
