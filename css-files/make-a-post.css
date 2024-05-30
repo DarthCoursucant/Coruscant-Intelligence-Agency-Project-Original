@@ -13,7 +13,7 @@
 }
 
 /*Forms*/
-.header-of-post-box, .author-of-the-post-box {
+.header-of-post-box, .author-of-the-post-box, .tags-of-the-post, .picture-of-the-post {
     display: flex;
     border: 2px solid #d30101;
     height: 80px;
@@ -34,6 +34,12 @@
     margin-top: 30px;
 }
 
+.tags-of-the-post, .picture-of-the-post {
+    background-color: #000000;
+    margin-left: 100px;
+    margin-top: -150px;
+}
+
 .text-of-the-post-box {
     background-color: #000000;
     margin-left: 90px;
@@ -51,10 +57,16 @@
     color: #ffffff;
 }
 
-.author-of-post {
+.author-of-post, .picture-of-post{
     font-size: 30px;
     color: #ffffff;
     margin-left: 30px;
+}
+
+.tags-of-post {
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .text-of-post {
@@ -63,7 +75,7 @@
     margin-left: 200px;
 }
 
-#header-box, #author-box {
+#header-box, #author-box, #tags-box, #picture-box {
     margin-top: 20px;
     width: 200px;
     height: 30px;
@@ -92,19 +104,3 @@
     margin-top: 30px;
   }
 
-  .button-click {
-    background-color: #ffffff;
-    width: 500px;
-    height: 100px;
-    border: 2px solid #d30101;
-    border-radius: 20px;
-    margin-left: 250px;
-    margin-top: -200px;
-  }
-
-  .button-click a {
-    text-align: center;
-    text-decoration: none;
-    color: #000000;
-    margin-left: 100px;
-  }
