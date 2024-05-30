@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (response.ok) {
                     alert("Blog Post Created Successfully <3");
-                    window.location.href = "admin-page.html";
+                    window.location.href = "admin.html";
                 } else {
                     const errorData = await response.json();
                     console.log("Error Data:", errorData);
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             } catch (error) {
                 console.error("Error:", error.message);
-                alert("Failed to Create Blog Post. Please try again.");
+                alert("Can't Upload The Post, Because Of An Error Master");
             }
 
         });
