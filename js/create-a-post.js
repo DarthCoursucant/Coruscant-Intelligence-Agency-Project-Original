@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submit-button");
 
@@ -8,10 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const mainTitleValue = mainTitleInput.value.trim();
         const blogTitle = mainTitleValue;
 
+        const authorInput = document.getElementById("author-box");
+        const authorValue = authorInput.value.trim();
+
+        const tagsInput = document.getElementById("tags-box");
+        const tagsValue = tagsInput.value.trim();
+        const tags = tagsValue.split(',').map(tag => tag.trim());
+
+        const pictureUrlInput = document.getElementById("picture-box");
+        const pictureUrl = pictureUrlInput.value.trim();
+
         const blogText = document.getElementById("message").value.trim();
-        const tags = []; // No tags input in the provided HTML
-        const pictureUrl = ""; // No picture URL input in the provided HTML
-        const pictureAlt = ""; // No picture alt input in the provided HTML
+        const pictureAlt = ""; // No picture alt input in the provided HTML, leaving it blank
 
         try {
             const token = localStorage.getItem("token");
@@ -22,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const postData = {
                 title: blogTitle,
+                author: authorValue,
                 body: blogText,
                 tags: tags,
                 media: {
@@ -59,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("message").addEventListener("input", function() {
         const maxLength = 2000;
         const currentLength = this.value.length;
-        const remaining = maxLength - currentLength;
+        const remaining = maxLength • currentLength;
 
         let counter = document.getElementById("blogTextCounter");
         if (!counter) {
