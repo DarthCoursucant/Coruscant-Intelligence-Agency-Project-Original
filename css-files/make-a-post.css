@@ -3,10 +3,13 @@
 }
 
 .make-a-post-container {
-    background-color: blue;
+    background-color: #528DB1;
     width: 1000px;
     margin-left: 100px;
     height: 1200px;
+    border-radius: 20px;
+    border: 2px solid #d30101;
+    margin-top: 30px;
 }
 
 /*Forms*/
@@ -20,19 +23,19 @@
 }
 
 .header-of-post-box {
-    background-color: brown;
+    background-color: #000000;
     margin-left: 100px;
     margin-top: 30px;
 }
 
 .author-of-the-post-box {
-    background-color: burlywood;
+    background-color: #000000;
     margin-left: 100px;
     margin-top: 30px;
 }
 
 .text-of-the-post-box {
-    background-color: chocolate;
+    background-color: #000000;
     margin-left: 90px;
     margin-top: -150px;
     padding: 20px 20px 20px 20px;
@@ -84,7 +87,7 @@
     resize: vertical;
     width: 700px;
     resize: none;
-    margin-left: 40px;
+    margin-left: 60px;
     border-radius: 20px;
     margin-top: 30px;
   }
