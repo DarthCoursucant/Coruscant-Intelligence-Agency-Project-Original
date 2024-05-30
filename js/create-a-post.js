@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: JSON.stringify(postData)
             };
 
-            const response = await fetch("https://v2.api.noroff.dev/blog/posts/wervik", options);
+            const response = await fetch("https://v2.api.noroff.dev/blog/posts/amebuj", options);
 
             if (response.ok) {
                 alert("Blog Post Created Successfully <3");
