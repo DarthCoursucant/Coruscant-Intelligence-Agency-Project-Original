@@ -5,3 +5,50 @@
 html, body, main.page-body {
     background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
+
+.admin-page-categories {
+    display: flex;
+    background-color: #ffffff;
+    width: 1400px;
+    margin-left: 40px;
+    border: 2px solid #d30101;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.create-a-post-button {
+    background-color: #417D6C;
+    width: 600px;
+    height: 300px;
+}
+
+.category-button {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.category-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.category-text h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.category-text p {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.create-a-post-button {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+
+}
