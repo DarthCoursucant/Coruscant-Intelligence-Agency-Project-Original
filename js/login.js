@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginButton = document.querySelector("#login-form-button a");
 
     // Setting default values for the username and password
-    usernameInput.value = "Shmi Skywalker";
+    usernameInput.value = "Shmi-Skywalker";
     passwordInput.value = "Tatooine";
 
     const checkFormValidity = () => {
@@ -81,3 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+
+if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+    localStorage.setItem("username", data.data.name);
+    localStorage.setItem("token", data.data.accessToken);
+
+    window.location.href = "admin.html"; 
+}
