@@ -41,7 +41,6 @@
     border: 2px solid #d30101;
 }
 
-
 .name-of-post {
     font-size: 30px;
     margin-left: 70px;
@@ -54,6 +53,12 @@
     margin-left: 30px;
 }
 
+.text-of-post {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 200px;
+}
+
 #header-box, #author-box {
     margin-top: 20px;
     width: 200px;
@@ -62,3 +67,23 @@
     border-radius: 15px;
     border: 2px solid #000000;
 }
+
+ input,textarea {
+    font-size: 20px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  textarea {
+    vertical-align: middle;
+    height: 300px;
+    resize: vertical;
+    width: 700px;
+    resize: none;
+    margin-left: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
