@@ -23,3 +23,111 @@ html, body, main.page-body {
 .all-post-welcome h3 {
     font-size: 25px;
 }
+
+/* HERO IMAGES */
+.hero-container-image-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lumiere-a.akamaihd.net/v1/images/the-books-of-boba-fett-cargo-hold-ch-1_tall_55812be3.jpeg?region=0,0,1536,864&width=768");
+}
+
+.hero-container-image-two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.goodfon.com/original/2560x1440/d/85/star-wars-episode-vii-the-6653.jpg')
+}
+
+.hero-container-image-three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.goodfon.com/original/1920x1080/2/16/yoda-star-wars-episode-v-the-empire-strikes-back-movies-film.jpg')
+}
+
+.hero-container-image-four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers-clan.com/wp-content/uploads/2023/10/star-wars-sad-baby-yoda-desktop-wallpaper-preview.jpg')
+}
+
+.hero-container-image-five {
+    background-image: linear-gradient(rgba(33, 4, 4, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0YXIlMjB3YXJzfGVufDB8fDB8fHww')
+}
+
+.hero-container-image-six {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4ODIxOTczLWltYWdlLWt6MmViYnA2LmpwZw.jpg')
+}
+
+.hero-container-image-seven {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/65535/49818284777_bd80680b7d_b.jpg')
+}
+
+.hero-container-image-eight {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Star_wars._Desfile_en_Santiago_de_Compostela.jpg')
+}
+
+.hero-container-image-nine {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.goodfon.com/original/1920x1200/5/dd/speeder-bike-star-wars-movie.jpg')
+}
+
+.hero-container-image-teen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.goodfon.com/original/1920x1200/1/76/badfon-zvezdnye-voyny-obi-van-kenobi.jpg')
+}
+
+.hero-container-image-eleven {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn12.picryl.com/photo/2016/12/31/star-wars-sturmtruppler-wallpaper-backgrounds-textures-b30d9b-1024.jpg')
+}
+
+.hero-container-image-twelve {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.goodfon.com/original/1920x1080/6/e7/star-wars-zviozdnye-voiny-zvezdolet-fantastika-planeta.jpg')
+}
+
+.hero-container-image-one, .hero-container-image-two, .hero-container-image-three, .hero-container-image-four, .hero-container-image-five, .hero-container-image-six, .hero-container-image-seven, .hero-container-image-eight, .hero-container-image-nine, .hero-container-image-teen, .hero-container-image-eleven, .hero-container-image-twelve {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-container-image-one, .hero-container-image-two, .hero-container-image-three, .hero-container-image-four, .hero-container-image-five, .hero-container-image-six, .hero-container-image-seven, .hero-container-image-eight, .hero-container-image-nine, .hero-container-image-teen, .hero-container-image-eleven, .hero-container-image-twelve {
+    width: 1200px;
+    margin-left: 150px;
+    border-radius: 20px;
+    border: 2px solid #d30101;
+    margin-top: 40px;
+}
+
+.hero-container-image-one {
+    height: 500px;
+}
+
+.hero-container-image-two, .hero-container-image-three, .hero-container-image-six  {
+    height: 400px;
+}
+
+.hero-container-image-four, .hero-container-image-five, .hero-container-image-seven, .hero-container-image-eight, .hero-container-image-nine, .hero-container-image-teen, .hero-container-image-eleven, .hero-container-image-twelve {
+    height: 450px;
+}
+
+.hero-container-header {
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-container-text p {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-buttons-type-one p {
+    text-align: center;
+}
+
+.see-the-post {
+    background-color: #d30101;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.see-the-post a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* END HERO IMAGES */
