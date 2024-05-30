@@ -8,5 +8,5 @@
  The Reconquest of Ord Radama
 
 
-Username = Shmi Skywalker
+Username = Shmi-Skywalker
 Password = Tatooine
