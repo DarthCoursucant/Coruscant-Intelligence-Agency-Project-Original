@@ -1,33 +1,27 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-    const newBlogForm = document.getElementById("newBlogForm"); 
+    const submitButton = document.getElementById("submit-button");
 
-    newBlogForm.addEventListener("submit", async (event) => {
+    submitButton.addEventListener("click", async (event) => {
         event.preventDefault();
 
-        const headerBoxInput = document.getElementById("header-box");
-        const headerBoxValue = headerBoxInput.value.trim();
-        const authorBoxInput = document.getElementById("author-box");
-        const authorBoxValue = authorBoxInput.value.trim();
-
-        const blogTitle = headerBoxValue;
-        const blogAuthor = authorBoxValue;
+        const mainTitleInput = document.getElementById("header-box");
+        const mainTitleValue = mainTitleInput.value.trim();
+        const blogTitle = mainTitleValue;
 
         const blogText = document.getElementById("message").value.trim();
-        const tags = document.getElementById("tags").value.trim().split(/\s*,\s*/);
-        const pictureUrl = document.getElementById("pictureUrl").value.trim();
-        const pictureAlt = document.getElementById("pictureAlt").value.trim();
+        const tags = []; // No tags input in the provided HTML
+        const pictureUrl = ""; // No picture URL input in the provided HTML
+        const pictureAlt = ""; // No picture alt input in the provided HTML
 
         try {
             const token = localStorage.getItem("token");
 
             if (!token) {
-                throw new Error("I See That Young Padwan Lost His Ways.");
+                throw new Error("No access token found. Please login again.");
             }
 
             const postData = {
                 title: blogTitle,
-                author: blogAuthor,
                 body: blogText,
                 tags: tags,
                 media: {
@@ -49,18 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.ok) {
                 alert("Blog Post Created Successfully <3");
-
                 window.location.href = "admin-page.html";
-            } 
-            
-            else {
+            } else {
                 const errorData = await response.json();
                 throw new Error(errorData.errors[0].message);
             }
 
-        } 
-        
-        catch (error) {
+        } catch (error) {
             console.error(error.message);
             alert("Failed to Create Blog Post. Please try again.");
         }
@@ -70,16 +59,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("message").addEventListener("input", function() {
         const maxLength = 2000;
         const currentLength = this.value.length;
-        const remaining = maxLength • currentLength;
-    
-        const counter = document.getElementById("blogTextCounter");
+        const remaining = maxLength - currentLength;
+
+        let counter = document.getElementById("blogTextCounter");
+        if (!counter) {
+            counter = document.createElement("div");
+            counter.id = "blogTextCounter";
+            this.parentNode.appendChild(counter);
+        }
         counter.textContent = remaining + " characters remaining...";
-    
+
         if (remaining < 0) {
             counter.style.color = "red";
-        } 
-        
-        else {
+        } else {
             counter.style.color = "";
         }
 
