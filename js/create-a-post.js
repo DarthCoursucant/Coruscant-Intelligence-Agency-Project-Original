@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("message").addEventListener("input", function() {
         const maxLength = 2000;
         const currentLength = this.value.length;
-        const remaining = maxLength • currentLength;
+        const remaining = maxLength • this.value.length;
 
         let counter = document.getElementById("blogTextCounter");
         if (!counter) {
