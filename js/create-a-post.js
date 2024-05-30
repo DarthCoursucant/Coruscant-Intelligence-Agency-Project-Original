@@ -4,127 +4,97 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const submitButton = document.getElementById("submit-button");
     console.log("Submit button:", submitButton);
-    
-    submitButton.addEventListener("click", async (event) => {
-        event.preventDefault();
-        console.log("Submit button clicked");
 
-        // Your existing code...
-    });
+    if (submitButton) {
+        submitButton.addEventListener("click", async (event) => {
+            event.preventDefault();
+            console.log("Submit button clicked");
 
-    document.getElementById("message").addEventListener("input", function() {
-        const maxLength = 2000;
-        const currentLength = this.value.length;
-        const remaining = maxLength * currentLength;
+            const mainTitleInput = document.getElementById("header-box");
+            const mainTitleValue = mainTitleInput.value.trim();
+            const blogTitle = mainTitleValue;
 
-        let counter = document.getElementById("blogTextCounter");
-        if (!counter) {
-            counter = document.createElement("div");
-            counter.id = "blogTextCounter";
-            this.parentNode.appendChild(counter);
-        }
-        counter.textContent = remaining + " characters remaining...";
+            const authorInput = document.getElementById("author-box");
+            const authorValue = authorInput.value.trim();
 
-        if (remaining < 0) {
-            counter.style.color = "red";
-        } else {
-            counter.style.color = "";
-        }
+            const tagsInput = document.getElementById("tags-box");
+            const tagsValue = tagsInput.value.trim();
+            const tags = tagsValue.split(',').map(tag => tag.trim());
 
-    });
+            const pictureUrlInput = document.getElementById("picture-box");
+            const pictureUrl = pictureUrlInput.value.trim();
 
-});
+            const blogText = document.getElementById("message").value.trim();
+            const pictureAlt = ""; // No picture alt input in the provided HTML, leaving it blank
 
+            try {
+                const token = localStorage.getItem("token");
 
-document.addEventListener("DOMContentLoaded", () => {
-    const submitButton = document.getElementById("submit-button");
-
-    submitButton.addEventListener("click", async (event) => {
-        event.preventDefault();
-
-        const mainTitleInput = document.getElementById("header-box");
-        const mainTitleValue = mainTitleInput.value.trim();
-        const blogTitle = mainTitleValue;
-
-        const authorInput = document.getElementById("author-box");
-        const authorValue = authorInput.value.trim();
-
-        const tagsInput = document.getElementById("tags-box");
-        const tagsValue = tagsInput.value.trim();
-        const tags = tagsValue.split(',').map(tag => tag.trim());
-
-        const pictureUrlInput = document.getElementById("picture-box");
-        const pictureUrl = pictureUrlInput.value.trim();
-
-        const blogText = document.getElementById("message").value.trim();
-        const pictureAlt = ""; // No picture alt input in the provided HTML, leaving it blank
-
-        try {
-            const token = localStorage.getItem("token");
-
-            if (!token) {
-                throw new Error("No access token found. Please login again.");
-            }
-
-            const postData = {
-                title: blogTitle,
-                author: authorValue,
-                body: blogText,
-                tags: tags,
-                media: {
-                    url: pictureUrl,
-                    alt: pictureAlt
+                if (!token) {
+                    throw new Error("No access token found. Please login again.");
                 }
-            };
 
-            console.log("Post Data:", postData);
+                const postData = {
+                    title: blogTitle,
+                    author: authorValue,
+                    body: blogText,
+                    tags: tags,
+                    media: {
+                        url: pictureUrl,
+                        alt: pictureAlt
+                    }
+                };
 
-            const options = {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`
-                },
-                body: JSON.stringify(postData)
-            };
+                console.log("Post Data:", postData);
 
-            const response = await fetch("https://v2.api.noroff.dev/blog/posts/amebuj", options);
+                const options = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    },
+                    body: JSON.stringify(postData)
+                };
 
-            if (response.ok) {
-                alert("Blog Post Created Successfully <3");
-                window.location.href = "admin.html";
-            } else {
-                const errorData = await response.json();
-                console.log("Error Data:", errorData);
-                throw new Error(errorData.errors ? errorData.errors[0].message : "Unknown error");
+                const response = await fetch("https://v2.api.noroff.dev/blog/posts/amebuj", options);
+
+                if (response.ok) {
+                    alert("Blog Post Created Successfully <3");
+                    window.location.href = "admin-page.html";
+                } else {
+                    const errorData = await response.json();
+                    console.log("Error Data:", errorData);
+                    throw new Error(errorData.errors ? errorData.errors[0].message : "Unknown error");
+                }
+
+            } catch (error) {
+                console.error("Error:", error.message);
+                alert("Failed to Create Blog Post. Please try again.");
             }
 
-        } catch (error) {
-            console.error("Error:", error.message);
-            alert("Failed to Create Blog Post. Please try again.");
-        }
+        });
+    }
 
-    });
+    const messageInput = document.getElementById("message");
+    if (messageInput) {
+        messageInput.addEventListener("input", function () {
+            const maxLength = 2000;
+            const currentLength = this.value.length;
+            const remaining = maxLength • currentLength;
 
-    document.getElementById("message").addEventListener("input", function() {
-        const maxLength = 2000;
-        const currentLength = this.value.length;
-        const remaining = maxLength • currentLength;
+            let counter = document.getElementById("blogTextCounter");
+            if (!counter) {
+                counter = document.createElement("div");
+                counter.id = "blogTextCounter";
+                this.parentNode.appendChild(counter);
+            }
+            counter.textContent = remaining + " characters remaining...";
 
-        let counter = document.getElementById("blogTextCounter");
-        if (!counter) {
-            counter = document.createElement("div");
-            counter.id = "blogTextCounter";
-            this.parentNode.appendChild(counter);
-        }
-        counter.textContent = remaining + " characters remaining...";
-
-        if (remaining < 0) {
-            counter.style.color = "red";
-        } else {
-            counter.style.color = "";
-        }
-
-    });
-
+            if (remaining < 0) {
+                counter.style.color = "red";
+            } else {
+                counter.style.color = "";
+            }
+        });
+    }
 });
