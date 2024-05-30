@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const newBlogForm = document.getElementById("newBlogForm"); // Ensure your form has this ID
+    const newBlogForm = document.getElementById("newBlogForm"); 
 
     newBlogForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const token = localStorage.getItem("token");
 
             if (!token) {
-                throw new Error("No access token found. Please login again.");
+                throw new Error("I See That Young Padwan Lost His Ways.");
             }
 
             const postData = {
