@@ -1,0 +1,25 @@
+html, body, main.page-body {
+    background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.all-post-welcome {
+    background-color: #ffffff;
+    width: 800px;
+    border: 2px solid #d30101;
+    border-radius: 20px;
+    margin-left: 350px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.all-post-welcome h1 {
+    font-size: 45px;
+}
+
+.all-post-welcome h2 {
+    font-size: 30px;
+}
+
+.all-post-welcome h3 {
+    font-size: 25px;
+}
