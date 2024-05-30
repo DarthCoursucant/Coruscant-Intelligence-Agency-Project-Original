@@ -6,6 +6,7 @@
     background-color: blue;
     width: 1000px;
     margin-left: 100px;
+    height: 1200px;
 }
 
 /*Forms*/
@@ -33,7 +34,7 @@
 .text-of-the-post-box {
     background-color: chocolate;
     margin-left: 90px;
-    margin-top: -600px;
+    margin-top: -150px;
     padding: 20px 20px 20px 20px;
     border-radius: 20px;
     width: 800px;
@@ -86,4 +87,21 @@
     margin-left: 40px;
     border-radius: 20px;
     margin-top: 30px;
+  }
+
+  .button-click {
+    background-color: #ffffff;
+    width: 500px;
+    height: 100px;
+    border: 2px solid #d30101;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-top: -200px;
+  }
+
+  .button-click a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 100px;
   }
