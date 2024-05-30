@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const response = await fetch("https://v2.api.noroff.dev/blog/posts/amebuj", options);
 
                 if (response.ok) {
-                    alert("Blog Post Created Successfully <3");
+                    alert("Roger Roger Its on");
                     window.location.href = "admin.html";
                 } else {
                     const errorData = await response.json();
