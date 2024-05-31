@@ -33,7 +33,7 @@ async function getToken(username) {
             body: JSON.stringify({ username }),
         };
         console.log(options);
-        const response = await fetch(`https://api.noroff.dev/api/v1/auth/login`, options); 
+        const response = await fetch(`https://api.noroff.dev/api/v2/auth/login`, options); 
         console.log(response);
         if (response.ok){
             const data = await response.json();
