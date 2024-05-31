@@ -18,8 +18,5 @@ async function fetchData() {
     console.error('Failed to fetch data. Status:', response.status);
   }
 }
-{
-  "name": "amebuj" // Optional
-}
 
 fetchData();
