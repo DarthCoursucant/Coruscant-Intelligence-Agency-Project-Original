@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("login-form");
     const usernameInput = document.getElementById("#username");
     const passwordInput = document.getElementById("#password");
-    const loginButton = document.querySelector("submit-button");
+    const loginButton = document.querySelector("#login-form-button ");
         
     // this is the issue for login 
     // Setting default values for the username and password
-    usernameInput.value = "Shmi-Skywalker";
-    passwordInput.value = "Tattoine";
+    usernameInput.value = "first.last@stud.noroff.no";
+    passwordInput.value = "UzI1NiIsInR5cCI";
 
     const checkFormValidity = () => {
         const username = usernameInput.value.trim();
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-if (response.ok == true ) {
+if (response.ok) {
     const data = response.json();
     console.log(data);
     localStorage.setItem("username", data.data.name);
