@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Hello There...");
 
-    const loginForm = document.querySelector("form.login-form");
+    const loginForm = document.querySelector("login-form");
     const usernameInput = document.getElementById("#username");
     const passwordInput = document.getElementById("#password");
     const loginButton = document.querySelector("submit-button");
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem("username", data.data.name);
                 localStorage.setItem("token", data.data.accessToken);
 
-                window.location.href = "admin.html";
+                window.location.href = "admin-page.html";
             } else {
                 throw new Error(response.statusText);
             }
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-if (response.ok) {
+if (response.ok == true ) {
     const data = response.json();
     console.log(data);
     localStorage.setItem("username", data.data.name);
