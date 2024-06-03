@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem("username", data.data.name);
                 localStorage.setItem("token", data.data.accessToken);
 
-                // Redirect to admin.html
                 window.location.href = "admin.html";
             } else {
                 throw new Error(response.statusText);
