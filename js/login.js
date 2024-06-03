@@ -1,11 +1,10 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Trying to sneak a peak?...");
 
-    const loginForm = document.querySelector("form.login-form");
+    const loginForm = document.querySelector("form#login");
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
-    const loginButton = loginForm.querySelector("button[type='submit']");
+    const loginButton = document.querySelector(".login-button");
 
     // Set default username and password
     usernameInput.value = "Shmi-Skywalker";
@@ -14,24 +13,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkFormValidity = () => {
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
-
+        
         return username && password;
     };
 
     const updateLoginButtonOpacity = () => {
         if (checkFormValidity()) {
-            loginButton.style.opacity = 1;
-        } else {
-            loginButton.style.opacity = 0.5;
+            loginButton.style.opacity = 1; 
+        } 
+        
+        else {
+            loginButton.style.opacity = 0.5; 
         }
     };
-
-    loginButton.style.opacity = checkFormValidity() ? 1 : 0.5;
 
     usernameInput.addEventListener("input", updateLoginButtonOpacity);
     passwordInput.addEventListener("input", updateLoginButtonOpacity);
 
-    loginForm.addEventListener("submit", (event) => {
+    loginForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         console.log("Trying to Login, don't interrupt");
 
@@ -41,12 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("username: ", username);
         console.log("password: ", password);
 
-        if (username === "Shmi-Skywalker" && password === "Tatooine") {
+        if (checkFormValidity()) {
             console.log("Heading out to get Token, One sec");
             getToken(username, password);
-        } else {
-            console.error("Invalid username or password. The correct username is 'Shmi-Skywalker' and the correct password is 'Tatooine'.");
-            alert("Invalid username or password. Please try again.");
+        } 
+        
+        else {
+            console.error("Username and password are required.");
         }
     });
 
@@ -73,10 +73,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem("token", data.data.accessToken);
 
                 window.location.href = "admin.html";
-            } else {
+                
+            } 
+            
+            else {
                 throw new Error(response.statusText);
             }
-        } catch (error) {
+        } 
+        
+        catch (error) {
             console.error("Error:", error.message);
         }
     }
